@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <hr>
+
+        <a href="/add" class="btn add-btn">➕ Add Student</a>
+        <a href="/view" class="btn view-btn">📋 View Students</a>
+        <a href="/admin_search" class="btn search-btn">🔍 Search Student</a>
+        <a href="/" class="btn back-btn">⬅ Back to Home</a>
+    </div>
+
+</body>
+</html>

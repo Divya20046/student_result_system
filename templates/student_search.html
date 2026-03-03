@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Search Your Result</h1>
+
+    <form method="POST">
+        <input type="text" name="search" placeholder="Enter Roll No or Name" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if student %}
+        <hr>
+        <p><strong>Roll No:</strong> {{ student[1] }}</p>
+        <p><strong>Name:</strong> {{ student[2] }}</p>
+        <p><strong>Marks:</strong> {{ student[3] }}</p>
+        <p><strong>Grade:</strong> {{ student[4] }}</p>
+    {% elif request.method == "POST" %}
+        <p style="color:red;">Student Not Found</p>
+    {% endif %}
+
+    <a href="/student" class="back-btn">⬅ Back to Student Dashboard</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* Page Background */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to right, #eef2f6, #dde5ed);
+    padding: 50px;
+}
+
+/* Main Container */
+.container {
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+    border-top: 5px solid #2c3e50;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #2c3e50;
+    letter-spacing: 0.5px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fafbfd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Table Header */
+th {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 14px;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+/* Table Cells */
+td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e3e8ee;
+    font-weight: 500;
+    color: #495057;
+}
+
+/* Alternate Row Color */
+tr:nth-child(even) {
+    background-color: #f4f7fa;
+}
+
+/* Hover Effect */
+tr:hover {
+    background-color: #e9f0f6;
+    transition: 0.2s ease;
+}
+
+/* Edit Button */
+.edit-btn {
+    padding: 6px 12px;
+    background-color: #3a7ca5;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: 0.2s ease;
+}
+
+.edit-btn:hover {
+    background-color: #2f6690;
+}
+
+/* Delete Button */
+.delete-btn {
+    padding: 6px 12px;
+    background-color: #c0392b;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #992d22;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>➕ Add New Student</h1>
+    <form method="POST">
+    <input type="text" name="roll_no" placeholder="Roll Number" required>
+    <input type="text" name="name" placeholder="Student Name" required>
+    <input type="number" name="marks" placeholder="Marks (0-100)" required>
+<input type="text" name="grade" placeholder="Grade (A-F)" required>
+    <button type="submit">Submit</button>
+</form>
+
+{% if error %}
+    <p style="color:red;">{{ error }}</p>
+{% endif %}
+
+    <a href="/admin" class="back-btn">⬅ Back to Dashboard</a>
+</div>
+
+</body>
+</html>
